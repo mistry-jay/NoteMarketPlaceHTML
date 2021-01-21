@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>Notes Marketplace</title>
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../CSS/bootstrap/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="#" title="Site Logo">
+                        <img src="../Images/User-Profile/logo.png" alt="logo" class="responsive img">
+                    </a>
+                </div>
+                <div class="navigation-wrapper">
+                    <nav class="main-nav">
+                        <ul class="menu-navigation">
+                            <li>
+                                <a href="#">Search Notes</a>
+                            </li>
+                            <li>
+                                <a href="#">sell your Notes</a>
+                            </li>
+                            <li>
+                                <a href="#">Buyer Requests</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="../Images/User-Profile/user-img.png" class="user-img">
+                                </a>
+                            </li>
+                            <li>
+                                <button class="btn-logout">Logout</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!--User Profile Heading-->
+    <div>
+        <div class="user-profile-img">
+            <div><img src="../Images/User-Profile/banner-with-overlay.jpg"></div>
+            <div id="user-profile-heading">
+                <h1>User Profile</h1>
+            </div>
+        </div>
+    </div>
+    <!--user-details-->
+    <div class="user-details">
+        <div id="user-details-head">
+            <div>
+                <h3 id="basic-details-head">Basic Profile Details</h3>
+            </div>
+        </div>
+        <div class="detils-form">
+            <div class="row">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="firstName">First Name*</label><br>
+                            <input type="firstName" class="form-control details-input" placeholder="Enter your First name" required>
+
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Last Name*</label><br>
+                            <input type="lastName" class="form-control details-input" placeholder="Enter your Last name" required>
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="firstName">Email*</label><br>
+                            <input type="firstName" class="form-control details-input" placeholder="Enter your Email id" required>
+
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Date of birth</label><br>
+                            <input type="Date of birth" class="form-control details-input" placeholder="Enter your Birth Date" required>
+                            <img src="../Images/User-Profile/calendar.png" class="details-icon" style="margin-top:-35px">
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Gender</label><br>
+                            <input type="text" class="form-control details-input" placeholder="Select your gender" required>
+                            <img src="../Images/User-Profile/down-arrow.png" class="details-icon">
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Phone Number</label><br>
+                            <input type="lastName" class="form-control details-input" placeholder="Enter your Mobile number" required>
+                            <img src="../Images/User-Profile/down-arrow.png" class="details-icon">
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Profile Picture</label><br>
+                            <input type="text" class="form-control details-input" placeholder="Upload a picture" required style="height: 100px;padding-top:60px;padding-left:190px">
+                            <img src="../Images/User-Profile/upload.png" class="details-icon" style=" display: block; margin-left: auto;margin-right: 230px;margin-top: -80px;margin-bottom: 50px;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--user-details-->
+    <div class="address-details">
+        <div id="user-details-head">
+            <div>
+                <h3 id="basic-details-head">Address Details</h3>
+            </div>
+        </div>
+        <div class="detils-form">
+            <div class="row">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="firstName">Address Line1*</label><br>
+                            <input type="firstName" class="form-control details-input" placeholder="Enter your Address" required>
+
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Address line2</label><br>
+                            <input type="lastName" class="form-control details-input" placeholder="Enter your address" required>
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="firstName">City*</label><br>
+                            <input type="firstName" class="form-control details-input" placeholder="Enter your City" required>
+
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">State*</label><br>
+                            <input type="Date of birth" class="form-control details-input" placeholder="Enter your State" required>
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">ZipCode*</label><br>
+                            <input type="text" class="form-control details-input" placeholder="Enter Your ZipCode" required>
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Country</label><br>
+                            <input type="lastName" class="form-control details-input" placeholder="Select Your Contry" required style="width: ">
+                            <img src="../Images/User-Profile/down-arrow.png" class="details-icon">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--university-details-->
+    <div class="user-details">
+        <div id="user-details-head">
+            <div>
+                <h3 id="basic-details-head">University and College Information</h3>
+            </div>
+        </div>
+        <div class="detils-form">
+            <div class="row">
+                <div class="container">
+                    <form>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="firstName">University</label><br>
+                            <input type="firstName" class="form-control details-input" placeholder="Enter your University" required>
+
+                        </div>
+                        <div class="col-md-6 profile-details-form">
+                            <label class="heading" for="lastName">Collage</label><br>
+                            <input type="lastName" class="form-control details-input" placeholder="Enter your Collage" required>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn-submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <!--footer area-->
+    <hr>
+    <footer>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Copyright &copy;TatvaSoft All Rights Reserved.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                     <ul class="social-list">
+                    <li><a href="#">
+                        <img src="../Images/User-Profile/facebook.png"style="margin-right:12px">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../Images/User-Profile/twitter.png"style="margin-right:6px">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="../Images/User-Profile/linkedin.png"style="margin-right:8px; margin-bottom:4px">
+                    </a></li>
+                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!--script js-->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

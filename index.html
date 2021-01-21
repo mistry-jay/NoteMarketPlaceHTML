@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>Notes Marketplace</title>
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="CSS/bootstrap/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- login section-->
+    <section id="login">
+        <!--backgroud image-->
+        <div>
+            <img id="login-bg-img" src="Images/pre-login/banner-with-overlay.jpg" alt="background img" class="img-responsive">
+            <!--top-logo-->
+            <div id="login-container">
+                <div id="top-logo"><img  src="Images/pre-login/top-logo.png" alt="top-logo" class="img-responsive,center">
+                </div>
+                <div id="login-form">
+                    <!-- login form details-->
+                    <form>
+                        <h3>Login</h3>
+                        <p>Enter your email address and password to login</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="heading" for="email">Email:</label><br>
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                   <div>
+                                        <label class="heading" for="password">Password:</label>
+                                        <a class="forgot-password" href="#">Forgot Password?</a>
+                                   </div>
+                                   <div>
+                                    <input id="password" type="password" class="form-control" name="password" value="secret"  placeholder="Enter Your Password">
+                                       <span toggle="#password" class="field-icon toggle-password"><img src="Images/pre-login/eye.png" ></span>       
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12" >
+                                <input id="check-box" type="checkbox">
+                                <label id="remember-me">Remember Me</label>
+                            </div>
+                                <button class="login-btn">Login</button>
+                            <p>Don't have an account?<a> Sign Up</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
