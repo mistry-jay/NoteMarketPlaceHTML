@@ -46,7 +46,7 @@
 
 #login-form p {
     font-family: 'open Sans';
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 19px;
     color: #333333;
@@ -56,7 +56,7 @@
 }
 
 .heading {
-    font-family: 'open Sans';
+    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -71,27 +71,35 @@
 .forgot-password {
     margin: 0;
     padding: 0;
-    font-family: 'open Sans';
+    font-family: 'Open Sans';
     font-size: 14px;
     line-height: 20px;
     color: #6255a5;
     margin-left: 284px;
     padding-bottom: 10px;
-
 }
 
-.email,
-.password {
+#email,
+#login-password {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: 'open Sans';
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    width: 400px;
-    margin-left: 50px;
+    width: 480px;
+    border: 1px solid #6255a5;
+    height: 50px;
 }
-
+.inputContainer span {
+    float: right;
+    margin-left: -25px;
+    margin-top: -32px;
+    padding-right: 30px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
 #check-box {
     border: 1px solid #d1d1d1;
     width: 20px;
@@ -153,7 +161,9 @@
     width: 480px;
     margin-left: 50px;
 }
-
+#error-password{
+    color: #ff3636;
+}
 /*---------------------------------
             user profile
 -----------------------------------*/
@@ -216,9 +226,9 @@
     align-items: center;
     list-style: none;
 }
-
-.site-header .header-wrapper .navigation-wrapper .main-nav .menu-navigation > li {
-    margin: 0 20px;
+.menu-navigation .active a{
+    color: #6255a5;
+    border-bottom: 2px solid #6255a5;
 }
 
 .site-header .header-wrapper .navigation-wrapper .main-nav .menu-navigation > li a {
@@ -253,9 +263,10 @@ section {
     width: 89px;
     height: 30px;
     border-radius: 3px;
-    font-style: 'Open Sans';
+    font-family: 'Open Sans';
     font-size: 16px;
     line-height: 22px;
+    margin-top: 16px;
 }
 
 .user-profile-img {
@@ -265,19 +276,24 @@ section {
     width: 100%;
     height: 250px;
     background: url(../Images/User-Profile/banner-with-overlay.jpg) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
 
-#user-profile-heading {
+#user-profile-heading h1 {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 50%;
+    margin: 0;
+    padding: 0;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    font-style: 'Open Sans';
+    font-style:Open Sans;
     font-size: 48px;
-    font-weight: semibold(600);
+    font-weight: 600;
     line-height: 52px;
     color: #ffffff;
 }
@@ -477,10 +493,10 @@ ul.social-list li a {
 /*---------------------------------
             Search and filter
 -----------------------------------*/
-#search-heading {
-    font-family: 'Open Sans';
-    font-size: 24px;
-    font-weight: Semibold(600);
+#search-heading h2{
+    font-family: Open Sans;
+    font-size: 34px;
+    font-weight: 600;
     line-height: 28px;
     color: #6255a5;
     /*margin-left: 130px;*/
@@ -778,52 +794,68 @@ set-box-shadow-cicis-menu-to-go {
 
 
 /*Faq page*/
+.q {
+    margin-top: 15px;
+}
+
+.accordion-toggle:after {
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    font-weight: 0;
+    content: "\f068";
+    float: right;
+    color: #b1b1b1;
+}
+
+.collapsed .accordion-toggle:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+}
+
+.q .collapsed .faq-qstn {
+    height: 60px;
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.q .faq-qstn {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    height: 60px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+    background-color: #fff;
+}
+
+.faq-ans {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    padding-left: 20px;
+    padding-right: 40px;
+    border: 1px solid #d1d1d1;
+    border-top: none;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
 #marketplace-notes-details {
     border: 1px solid #d1d1d1;
     padding: 20px;
     
 }
-#marketplace-notes-details p{
-    display: inline-block;
-}
-#marketplace-notes-details p:nth-child(1){
-    font-family: 'Open Sans';
-    font-size: 16px;
-    line-height: 22px;
-    color: #333333;
-    padding: 0;
-    margin: 0;
-}
-#marketplace-notes-details p:last-child{
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: Regular(400);
-    line-height: 22px;
-    color: #333333;
-    padding: 0;
-    margin: 0;
-}
-.faq-img {
-    
-    display: inline-block;
-    float: right;
-    margin: auto;
-}
-.faq-que {
-    background: #f3f3f3;
-    padding: 15px;
-    margin-top: 15px;
-}
-.faq-que p {
-    margin: auto;
-    display: inline-block;   
-}
+
 
 #search-heading p {
     font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: Regular(400);
-    line-height: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 38px;
     color: #333333;
 }
 
@@ -844,11 +876,14 @@ set-box-shadow-cicis-menu-to-go {
     float: right;
 }
 .search img{
-    margin-left: 0px;
-    position: relative;
+    margin-left: 7px;
+    margin-top: 17px;
+    
+    position: absolute;
     z-index: 2;
 }
 .search input {
+    padding-left: 40px;
     width: 322px;
     height: 50px;
     border: 1px solid #d1d1d1;
@@ -878,6 +913,31 @@ set-box-shadow-cicis-menu-to-go {
     margin-left: 50%;
     -webkit-transform: translateX(-50%);transform: translateX(-50%);
 }
+.pagination li a{
+    width: 34px;
+    height: 34px;
+    color: #333333;
+    font-family: Open Sans;
+    font-style: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 20px;
+}
+.pagination .page-item .active {
+    width: 34px;
+    height: 34px;
+    background: #6255a5;
+    color: #fff;
+    font-family: Open Sans;
+    font-style: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 20px;
+}
 /*Table*/
 .table-containt {
     
@@ -890,7 +950,15 @@ set-box-shadow-cicis-menu-to-go {
 .table-containt thead {
     font-family: 'Open Sans';
     font-size: 16px;
-    font-weight: semibold(600);
+    font-weight:600;
+    line-height: 20px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.table tbody td {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 20px;
     color: #333333;
 }
@@ -911,22 +979,32 @@ set-box-shadow-cicis-menu-to-go {
     vertical-align:middle;
 }
 .table-containt tbody tr:hover {
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    background: none;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .table-containt tbody tr td {
     text-align: center;
     vertical-align:middle;
 }
-
+.col-color{
+    color: #6255a5 !important;
+}
+.icon {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+    color: #aaaaaa;
+}
 .downloads-heading {
     margin-top: 80px;
     margin-bottom: 20px;
 }
 .downloads-heading h2 {
     font-family: 'Open Snas';
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 28px;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 38px;
     color: #6255a5;
 }
 
@@ -937,22 +1015,30 @@ set-box-shadow-cicis-menu-to-go {
     border-style:hidden;
 }
 .page-link {
-    color: #333333;
+    color: #fff;
     font-family: 'Open Sans';
-    font-style: Regular(400);
+    font-style:400;
     font-size: 16px;
     line-height: 20px;
-}
-.pagination a.active{
     width: 34px;
     height: 34px;
-    color: #6255a5;
-    background: #fff;
-    font-family: 'Open Sans';
-    font-style: Regular(400);
-    font-size: 16px;
-    line-height: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
+    border-radius: 50%;
 }
+.page-link-arrow {
+   font-size: 15px;
+    margin-right: 35px;
+    margin-left: 35px;
+    border: none;
+    width: 8px;
+    height: 15px;
+    color: #333333; 
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
 /*Review popup*/
 .modal-header{
     padding: 0px 50px;
@@ -989,4 +1075,52 @@ set-box-shadow-cicis-menu-to-go {
     color: #8a8a8a;
     height: 100px;
     width: 500px;
+}
+
+/*header(manu)*/
+.header-tab {
+    padding-top: 20px;
+    color: #333333;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.header-item .header-tab:hover {
+   color: #6255a5;
+    -webkit-transition: all .3s;
+    transition: all .3s; 
+}
+/*----------------------------
+            Dropdown
+------------------------------*/
+.dropdown-menu {
+    margin-right: 0px;
+}
+.dropdown-menu .dropdown-item {
+    padding-top: 10px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #333333;
+}
+.dropdown-menu .dropdown-item:hover {
+    background: #6255a5;
+    color: #fff;
+}
+.dropdown-menu .dropdown-item span {
+    color: #6255a5;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.dropdown-menu .dropdown-item:hover span {
+    background: #6255a5;
+    color: #fff;
+}
+.dropdown-menu .active {
+    background: #6255a5;
+    color: #fff;
 }

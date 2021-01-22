@@ -7,9 +7,14 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--Title for url-->
-    <title>Notes Marketplace</title>
+    <title>My Rejected Notes </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/Search/favicon.ico">
     <!-- open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="../CSS/bootstrap/bootstrap.min.css">
     <!-- style css-->
@@ -29,27 +34,35 @@
                 <div class="navigation-wrapper">
                     <nav class="main-nav">
                         <ul class="menu-navigation">
-                            <li>
-                                <a href="#">Search Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
                             </li>
-                            <li>
-                                <a href="#">sell your Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="my-sold-notes.html">sell your Notes</a>
                             </li>
-                            <li>
-                                <a href="#">Buyer Requests</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="buyer-req.html">Buyer Requests</a>
                             </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Contact Us</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
                             </li>
 
-                            <li>
-                                <a href="#">
+                            <li class="header-item">
+                                <a class="header-tab" href="contact-us.html">Contact Us</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../Images/User-Profile/user-img.png" class="user-img">
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="user-profile.html"><button class="dropdown-item" type="button">My Profile</button></a>
+                                    <a href="my-downloads.html"><button class="dropdown-item" type="button">My Downloads</button></a>
+                                    <a href="my-sold-notes.html"><button class="dropdown-item" type="button">My Sold Notes</button></a>
+                                    <a href="my-rejected-notes.html"><button class="dropdown-item" type="button">My Rejected Notes</button></a>
+                                    <a href="change-password.html"><button class="dropdown-item" type="button">Change Password</button></a>
+                                    <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                                </div>
                             </li>
                             <li>
                                 <button class="btn-logout">Logout</button>
@@ -67,128 +80,170 @@
                     <h2>My Rejected Notes </h2>
                 </div>
                 <div class="col-md-6">
-                  <div class="search">
-                   <img src="../Images/Search/search-icon.png">
-                    <input type="text" placeholder="       Search">
-                    <button>SEARCH</button>
-                </div>
+                    <div class="search">
+                        <img src="../Images/Search/search-icon.png">
+                        <input type="text" placeholder="Search">
+                        <button>SEARCH</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="table-containt">
-        <table class="table table-hover">
-  <thead>
-    <tr>
-      <th scope="col">SR NO.</th>
-      <th scope="col">NOTE TITLE</th>
-      <th scope="col">CATEGORY</th>
-      <th scope="col">REMARKS</th>
-      <th scope="col">CLONE</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    
-      <tr>
-      <th scope="row">3</th>
-  <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">7</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-     <th scope="row">8</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">9</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-    <tr>
-      <th scope="row">10</th>
-      <td>Data Science</td>
-      <td>Science</td>
-      <td>Lorem ipsum dolor sit amet.</td>
-      <td>Clone</td>
-      <td><img src="../Images/Search/dots.png"></td>
-    </tr>
-  </tbody>
-</table>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">SR NO.</th>
+                        <th scope="col">NOTE TITLE</th>
+                        <th scope="col">CATEGORY</th>
+                        <th scope="col">REMARKS</th>
+                        <th scope="col">CLONE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>Lorem ipsum dolor sit amet.</td>
+                        <td class="col-color">Clone</td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
+    <!--pagination-->
     <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><img src="../Images/Search/left-arrow.png"></a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">4</a></li>
-    <li class="page-item"><a class="page-link" href="#">5</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#"><img src="../Images/Search/right-arrow.png"></a>
-    </li>
-  </ul>
-</nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link page-link-arrow " href="#" tabindex="-1" aria-disabled="true">
+                <i class="fa fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item "><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link page-link-arrow" href="#"><i class=" fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+    </nav>
 
-    
+
     <!--footer area-->
     <hr>
     <footer>

@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--Title for url-->
-    <title>Notes Marketplace</title>
+    <title>Contact Us</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/Search/favicon.ico">
     <!-- open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!--Bootstrap css-->
@@ -29,18 +31,18 @@
                 <div class="navigation-wrapper">
                     <nav class="main-nav">
                         <ul class="menu-navigation">
-                            <li>
-                                <a href="#">Search Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
                             </li>
-                            <li>
-                                <a href="#">sell your Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="add-notes.html">Sell Your Notes</a>
                             </li>
-                            <li>
-                                <a href="#">FAQ</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
                             </li>
 
-                            <li>
-                                <a href="#">Contact Us</a>
+                            <li class="header-item">
+                                <a  class="header-tab" href="contact-us.html">Contact Us</a>
                             </li>
                             <li>
                                 <button class="btn-logout">Login</button>
@@ -64,8 +66,9 @@
     <div class="container">
         <div id="search-heading">
             <h2>Get in Touch </h2>
-        </div>
+        
         <p>Let us know how to get back to you</p>
+        </div>
         <div class="row">
             <div class="form">
                <div class="col-md-6">
@@ -87,7 +90,7 @@
                 
                 <div class="col-md-6 profile-details-form">
                     <label class="heading" for="firstName">Comments/Questions*</label><br>
-                    <input type="firstName" class="form-control comment-section" placeholder="Comments...">
+                    <textarea class="form-control comment-section" placeholder="Comments..." ></textarea>
                 </div>
                 <div class="col-md-12">
                             <button class="btn-submit">SUBMIT</button>

@@ -20,3 +20,19 @@ jQuery(window).scroll(function () {
 jQuery(window).resize(function () {
   sticky_header();
 });
+/*------------
+password eye
+--------------*/
+/*================================
+ Password eye icon
+==================================*/
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});

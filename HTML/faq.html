@@ -7,9 +7,14 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--Title for url-->
-    <title>Notes Marketplace</title>
+    <title>FAQs</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/Search/favicon.ico">
     <!-- open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="../CSS/bootstrap/bootstrap.min.css">
     <!-- style css-->
@@ -28,18 +33,18 @@
                 <div class="navigation-wrapper">
                     <nav class="main-nav">
                         <ul class="menu-navigation">
-                            <li>
-                                <a href="#">Search Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
                             </li>
-                            <li>
-                                <a href="#">sell your Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="add-notes.html">sell your Notes</a>
                             </li>
-                            <li>
-                                <a href="#">FAQ</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
                             </li>
 
-                            <li>
-                                <a href="#">Contact Us</a>
+                            <li class="header-item">
+                                <a  class="header-tab" href="contact-us.html">Contact Us</a>
                             </li>
                             <li>
                                 <button class="btn-logout">Login</button>
@@ -50,6 +55,7 @@
             </div>
         </header>
     </div>
+
     <!--User Profile Heading-->
     <div>
         <div class="user-profile-img">
@@ -61,52 +67,80 @@
     </div>
   
         <div class="container">
-        <div id="search-heading"><h2>General Questions </h2></div>
-        <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-        <div id="marketplace-notes-details">
-           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-            <p>What is Marketplace-notes?</p>
-            <img src="../Images/FAQ/minus.png" class="faq-img">
-            </a>
-            <div id="collapse1" class="panel-collapse collapse in">
-            <p class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas tempora placeat earum non asperiores, commodi natus culpa! Quibusdam inventore, aperiam nesciunt velit architecto dicta debitis vero molestias minima laborum quia.</p>
-            </div>
+        <div id="search-heading"><h2>General Questions </h2>
         </div>
-            </div>
+                     <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q1">
+                     <h5 class="accordion-toggle faq-qstn">What is Marketplace-Notes?</h5>
+                 </div>
+                 <div id="q1" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere are many variations of passages of Lorem Ipsum available</div>
+                 </div>
+             </div>
 
-           <div class="faq-que">
-            <p>What do the University say?</p>
-               <a><img src="../Images/FAQ/plus.png" class="faq-img"></a>
-        </div>
-        <div class="faq-que">
-            <p>Is this Legal?</p>
-            <img src="../Images/FAQ/plus.png" class="faq-img">
-        </div>
-            </div>
+             <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q2">
+                     <h5 class="accordion-toggle faq-qstn">What do the Unvidersity say?</h5>
+                 </div>
+                 <div id="q2" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere</div>
+                 </div>
+             </div>
+
+             <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q3">
+                     <h5 class="accordion-toggle faq-qstn">Is this legal?</h5>
+                 </div>
+                 <div id="q3" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere</div>
+                 </div>
+             </div>
+
+
+
     
     <div id="search-heading"><h2>Uploaders</h2></div>
 
-     <div class="faq-que">
-            <p>What do the University say?</p>
-            <img src="../Images/FAQ/plus.png" class="faq-img">
-        </div>
-        <div class="faq-que">
-            <p>Is this Legal?</p>
-            <img src="../Images/FAQ/plus.png" class="faq-img">
-        </div>
+              <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q4">
+                     <h5 class="accordion-toggle faq-qstn">What can't I sell?</h5>
+                 </div>
+                 <div id="q4" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere
+                     </div>
+                 </div>
+             </div>
+
+             <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q5">
+                     <h5 class="accordion-toggle faq-qstn">What notes can I sell?</h5>
+                 </div>
+                 <div id="q5" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere</div>
+                 </div>
+             </div>
+
+         
         <div id="search-heading"><h2>Downloaders</h2></div>
 
-     <div class="faq-que">
-            <p>How do I buy notes?</p>
-            <img src="../Images/FAQ/plus.png" class="faq-img">
-        </div>
-        <div class="faq-que">
-            <p>can I edit the notes I purchased?</p>
-            <img src="../Images/FAQ/plus.png" class="faq-img">
-        </div>
-        </div>
+             <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q6">
+                     <h5 class="accordion-toggle faq-qstn">How do I buy notes?</h5>
+                 </div>
+                 <div id="q6" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere</div>
+                 </div>
+             </div>
 
+             <div class="q">
+                 <div class="collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#q7">
+                     <h5 class="accordion-toggle faq-qstn">Can I edit the notes I purchased?</h5>
+                 </div>
+                 <div id="q7" class="collapse">
+                     <div class="faq-ans">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomisedThere</div>
+                 </div>
+             </div>
+</div>
     <!--footer area-->
     <hr>
     <footer>
