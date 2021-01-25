@@ -6,10 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--Title for url-->
-    <title>Notes Marketplace</title>
+       <!--Title for url-->
+    <title>Add Notes</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
     <!-- open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!--Bootstrap css-->
     <link rel="stylesheet" href="../CSS/bootstrap/bootstrap.min.css">
     <!-- style css-->
@@ -29,27 +34,35 @@
                 <div class="navigation-wrapper">
                     <nav class="main-nav">
                         <ul class="menu-navigation">
-                            <li>
-                                <a href="#">Search Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
                             </li>
-                            <li>
-                                <a href="#">sell your Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="my-sold-notes.html">sell your Notes</a>
                             </li>
-                            <li>
-                                <a href="#">Buyer Requests</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="buyer-req.html">Buyer Requests</a>
                             </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Contact Us</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
                             </li>
 
-                            <li>
-                                <a href="#">
+                            <li class="header-item">
+                                <a class="header-tab" href="contact-us.html">Contact Us</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../Images/User-Profile/user-img.png" class="user-img">
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="user-profile.html"><button class="dropdown-item" type="button">My Profile</button></a>
+                                    <a href="my-downloads.html"><button class="dropdown-item" type="button">My Downloads</button></a>
+                                    <a href="my-sold-notes.html"><button class="dropdown-item" type="button">My Sold Notes</button></a>
+                                    <a href="my-rejected-notes.html"><button class="dropdown-item" type="button">My Rejected Notes</button></a>
+                                    <a href="change-password.html"><button class="dropdown-item" type="button">Change Password</button></a>
+                                    <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                                </div>
                             </li>
                             <li>
                                 <button class="btn-logout">Logout</button>
@@ -106,9 +119,10 @@
                     <label class="heading" for="firstName">Number of Pages</label><br>
                     <input type="firstName" class="form-control details-input" placeholder="Enter number of note page">
                 </div>
-                <div class="col-md-12 profile-details-form">
-                    <label class="heading" for="firstName">Description*</label><br>
-                    <input type="firstName" class="form-control details-input" placeholder="Enter your Description">
+                <div class="form-group col-md-12 profile-details-form">
+                    <label class="heading" for="Description">Description*</label><br>
+                    <textarea type="firstName" class="form-control details-input" placeholder="Enter your Description" rows='5' cols="12">
+                    </textarea>
                 </div>
             </div>
         </div>
@@ -176,8 +190,8 @@
                 
             </div>
         </div>
-        <button>SAVE</button>
-        <button>PUBLISH</button>
+        <button class="btn-submit">SAVE</button>
+        <button class="btn-submit">PUBLISH</button>
     </div>
 
     <!--footer area-->
