@@ -15,9 +15,17 @@
     z-index: -1;
     background: url(../Images/pre-login/banner-with-overlay.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /*logo and form*/
+
+#sign-up-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
 #top-logo {
     display: flex;
     justify-content: center;
@@ -154,7 +162,14 @@
     transform: translate(-50%, -50%);
 
 }
-
+#signup-successfully p{
+    font-family: Open Sans;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #32a852;
+    text-align: center;
+}
 .form-group {
     margin: 0;
     padding: 0;
@@ -639,6 +654,7 @@ ul.social-list li a {
     line-height: 20px;
     color: #8a8a8a;
     margin-bottom: 20px;
+    padding-left: 40px;
 }
 
 #search-icon{
@@ -658,7 +674,8 @@ ul.social-list li a {
     font-size: 16px;
     font-weight: Regular(400);
     line-height: 20px;
-    color: #8a8a8a;    
+    color: #8a8a8a;  
+    
 }
 .down-arrow{
    float: right;
@@ -781,6 +798,14 @@ ul.social-list li a {
     font-weight: Regular(400);
     line-height: 36px;
     color: #333333;
+    margin-left: 50px;
+}
+.red_text {
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #df3434;
     margin-left: 50px;
 }
 

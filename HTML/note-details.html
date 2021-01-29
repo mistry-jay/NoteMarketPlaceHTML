@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--Title for url-->
-    <title>Notes Marketplace</title>
+    <title>Note Details</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
     <!-- open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!--Bootstrap css-->
@@ -29,27 +31,35 @@
                 <div class="navigation-wrapper">
                     <nav class="main-nav">
                         <ul class="menu-navigation">
-                            <li>
-                                <a href="#">Search Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
                             </li>
-                            <li>
-                                <a href="#">sell your Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="my-sold-notes.html">sell your Notes</a>
                             </li>
-                            <li>
-                                <a href="#">Buyer Requests</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="buyer-req.html">Buyer Requests</a>
                             </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-
-                            <li>
-                                <a href="#">Contact Us</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
                             </li>
 
-                            <li>
-                                <a href="#">
+                            <li class="header-item">
+                                <a class="header-tab" href="contact-us.html">Contact Us</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../Images/User-Profile/user-img.png" class="user-img">
                                 </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="user-profile.html"><button class="dropdown-item" type="button">My Profile</button></a>
+                                    <a href="my-downloads.html"><button class="dropdown-item" type="button">My Downloads</button></a>
+                                    <a href="my-sold-notes.html"><button class="dropdown-item" type="button">My Sold Notes</button></a>
+                                    <a href="my-rejected-notes.html"><button class="dropdown-item" type="button">My Rejected Notes</button></a>
+                                    <a href="change-password.html"><button class="dropdown-item" type="button">Change Password</button></a>
+                                    <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                                </div>
                             </li>
                             <li>
                                 <button class="btn-logout">Logout</button>
@@ -65,7 +75,7 @@
        
        <div class="container">
        <div id="search-heading">
-           <h3>Notes Details</h3>
+           <h2>Notes Details</h2>
        </div>
         <div class="row">
             <div class="col-md-6">
@@ -109,6 +119,11 @@
                 <img src="../Images/Search/star-white.png">
                 100 Reviews</h5>
                 </div>
+                <div class="note-details col-md-12">
+                <span class="red_text">
+                            5 Users marked this note as inappropriate
+                        </span>
+                </div>
             </div>
             </div>
             <hr>
@@ -119,7 +134,7 @@
        <div class="row">
        <div class="container">
         <div class="col-md-5">
-        <div id="search-heading"><h3>Notes Preview</h3></div>
+        <div id="search-heading"><h2>Notes Preview</h2></div>
         <!-- responsive iframe --> 
 <!-- ============== -->
 
@@ -135,7 +150,7 @@ An &#105;frame should be displayed here but your browser version does not suppor
 </div></div>
         <div class="col-md-7"> 
         <div id="search-heading">
-        <h3>Customer Reviews</h3></div>
+        <h2>Customer Reviews</h2></div>
         <div class="review">
                 <img src="../Images/note-details/reviewer-1.png" id="customer-img">
                    <div class="review-person">
@@ -180,8 +195,14 @@ An &#105;frame should be displayed here but your browser version does not suppor
                <div class="modal-header">
                   
                    <h3 class="text-center">Thank you for Purchasing!</h3>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quis, ipsum inventore. Beatae explicabo at, ipsa incidunt nam labore obcaecati dolorem similique quos maxime adipisci impedit hic consequuntur nemo eaque ea ad unde, deserunt, tempore eligendi quia officiis laboriosam? Porro dolore magnam aspernatur iste. Reiciendis corporis molestiae, totam delectus omnis.</p>
-                   
+<div class="modal_inside">
+                        <span class="title">Dear Smith,</span>
+                        <p class="modal_text">As this is paid notes - you need to pay to seller Rahil Shah offline. We will send him an email that you want to download this note. He may contact you further for payment process completion.</p>
+                        <p class="modal_text">In case, you have urgency,<br>
+                            Please contact us on +9195377345959.</p>
+                        <p class="modal_text">Once he receives the payment and acknowledge us - selected notes you can see over my download tab for download.</p>
+                        <p class="modal_text">Have a good day.</p>
+                    </div>                   
                </div>
            </div>
        </div>

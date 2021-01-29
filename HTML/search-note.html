@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--Title for url-->
-    <title>Notes Marketplace</title>
+    <title>Search Notes</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
     <!-- open sans font-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!--Bootstrap css-->
@@ -22,7 +24,7 @@
     <!--Header-->
     <div class="wrapper">
         <header class="site-header">
-            <div class="header-wrapper">
+            <div class="header-wrapper Container">
                 <div class="logo-wrapper">
                     <a href="#" title="Site Logo">
                         <img src="../Images/User-Profile/logo.png" alt="logo" class="responsive img">
@@ -31,20 +33,21 @@
                 <div class="navigation-wrapper">
                     <nav class="main-nav">
                         <ul class="menu-navigation">
-                            <li>
-                                <a href="#">Search Notes</a>
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="add-notes.html">Sell Your Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a  class="header-tab" href="contact-us.html">Contact Us</a>
                             </li>
                             <li>
-                                <a href="#">sell your Notes</a>
-                            </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                            <li>
-                                <button class="btn-logout">Logout</button>
+                                <button class="btn-logout">Login</button>
                             </li>
                         </ul>
                     </nav>
@@ -69,7 +72,7 @@
         <div id="bg-search">
             <div class="row">
                 <div class="col-md-12">
-                    <input type="search" id="input-search" placeholder="          Search notes here...">
+                    <input type="search" id="input-search" placeholder="Search notes here...">
                     <img src="../Images/Search/search-icon.png" id="search-icon">
                 </div>
                 <div class="col-md-2">
@@ -396,7 +399,23 @@
             </div>
         </div>
     </div>
-    <!-- -->
+        <!--pagination-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link page-link-arrow " href="#" tabindex="-1" aria-disabled="true">
+                    <i class="fa fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item "><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link page-link-arrow" href="#"><i class=" fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+    </nav
             <!--footer area-->
     <hr>
     <footer>
