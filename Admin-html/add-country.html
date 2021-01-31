@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>User Profile</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../CSS/bootstrap/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="#" title="Site Logo">
+                        <img src="../Images/User-Profile/logo.png" alt="logo" class="responsive img">
+                    </a>
+                </div>
+                <div class="navigation-wrapper">
+                    <nav class="main-nav">
+                        <ul class="menu-navigation">
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Dashboard</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="my-sold-notes.html">Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="buyer-req.html">Members</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">Reports</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" href="contact-us.html">Settings</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../Images/User-Profile/user-img.png" class="user-img">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="user-profile.html"><button class="dropdown-item" type="button">Update Profile</button></a>
+                                    <a href="my-downloads.html"><button class="dropdown-item" type="button">Change Password</button></a>
+                                    <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn-logout">Logout</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+       <div class="container">
+                    <form>
+                       <div class="downloads-heading" style="margin-left: -10px;margin-bottom: -10px;"><h2>Add Administrator</h2></div>
+                        <div class="profile-details-form">
+                            <label class="heading" for="firstName">COUNTRY NAME*</label><br>
+                            <input type="firstName" class="form-control details-input" placeholder="Enter your First name" required>
+                        </div>
+                        <div class="profile-details-form">
+                            <label class="heading" for="lastName">COUNTRY CODE*</label><br>
+                            <input type="lastName" class="form-control details-input" placeholder="Enter your Last name" required>
+                        </div>
+                        <div class="col-md-12">
+                        <button class="btn-submit" style="margin-bottom: -10px;">SUBMIT</button>
+                    </div>
+                    </form>
+                </div>
+        <!--footer area-->
+        <hr>
+        <footer>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>VERION 1.1.24</p>
+                        </div>
+                        <div class="col-md-6" style="float: right;">
+                            <p>
+                                Copyright &copy;TatvaSoft All Rights Reserved.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--bootstrap-->
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        <!--script js-->
+        <script src="../js/script.js"></script>
+</body>
+
+</html>

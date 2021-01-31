@@ -1269,3 +1269,55 @@ set-box-shadow-cicis-menu-to-go {
     background: #6255a5;
     color: #fff;
 }
+
+/*-------------------------------------
+            Admin Dashboard
+---------------------------------------*/
+.dashboard_top .new_downloaded_box-admin{
+    text-align: center;
+    height: 120px;
+    padding: 0;
+    padding-top: 25px;
+    border: 1px solid #d1d1d1;
+}
+.dashboard_top .for_publish_box{
+    text-align: center;
+    height: 120px;
+    padding: 0;
+    padding-top: 25px;
+    border: 1px solid #d1d1d1;
+}
+.dashboard_top .new_registration_box {
+    text-align: center;
+    height: 120px;
+    padding: 0;
+    padding-top: 25px;
+    border: 1px solid #d1d1d1;
+}
+.dashboard_top .boxes .heading {
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #6255a5;
+}
+.dashboard_top .boxes .sub_heading {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #333333;
+}
+
+.add-admin-btn{
+     background: #6255a5;
+    width: 250px;
+    height: 50px;
+    border-radius: 3px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 22px;
+    font-style: Bold(700);
+    margin-top: 10px;
+}
