@@ -57,13 +57,14 @@
                                     <img src="../Images/User-Profile/user-img.png" class="user-img">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="user-profile.html"><button class="dropdown-item" type="button">My Profile</button></a>
-                                    <a href="my-downloads.html"><button class="dropdown-item" type="button">My Downloads</button></a>
-                                    <a href="my-sold-notes.html"><button class="dropdown-item" type="button">My Sold Notes</button></a>
-                                    <a href="my-rejected-notes.html"><button class="dropdown-item" type="button">My Rejected Notes</button></a>
-                                    <a href="change-password.html"><button class="dropdown-item" type="button">Change Password</button></a>
-                                    <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
-                                </div>
+                            <a href="user-profile.html"><button class="dropdown-item" type="button">My Profile</button></a>
+                            <a href="myDownloads.html"><button class="dropdown-item" type="button">My Downloads</button></a>
+                            <a href="my_sold_notes.html"><button class="dropdown-item" type="button">My Sold Notes</button></a>
+                            <a href="my_rejected_notes.html"><button class="dropdown-item" type="button">My Rejected Notes</button></a>
+                            <a href="change_pwd.html"><button class="dropdown-item" type="button">Change Password</button></a>
+                            <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                            </div>
+                                
                             </li>
                             <li>
                                 <button class="btn-logout">Logout</button>
@@ -115,9 +116,11 @@
                         <td><img src="../Images/pre-login/eye.png">
                         </td>
                         <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <button class="dropdown-item" type="button">Allow Download</button>
-                            </div>
+                               <div class="dropdown-menu dropdown-menu-right">
+                                   <button class="dropdown-item" type="button">Download Note</button>
+                                   <button class="dropdown-item" type="button" data-toggle="modal" data-target="#reviewmodal">Add Reviews/Feedback</button>
+                                   <button class="dropdown-item" type="button">Report as Inappropriate</button>
+                               </div>
                         </td>
                     </tr>
                     <tr>
