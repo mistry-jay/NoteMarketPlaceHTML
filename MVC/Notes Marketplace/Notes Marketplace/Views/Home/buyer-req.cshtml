@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>Buyer Requests </title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/images/Search/favicon.ico">
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="~/Content/CSS/bootstrap/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="~/Content/CSS/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="#" title="Site Logo">
+                        <img src="~/Content/Images/User-Profile/logo.png" alt="logo" class="responsive img">
+                    </a>
+                </div>
+                <div class="navigation-wrapper">
+                    <nav class="main-nav">
+                        <ul class="menu-navigation">
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="my-sold-notes.html">sell your Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="buyer-req.html">Buyer Requests</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="faq.html">FAQ</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" href="contact-us.html">Contact Us</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="~/Content/Images/User-Profile/user-img.png" class="user-img">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                            <a href="user-profile.html"><button class="dropdown-item" type="button">My Profile</button></a>
+                            <a href="myDownloads.html"><button class="dropdown-item" type="button">My Downloads</button></a>
+                            <a href="my_sold_notes.html"><button class="dropdown-item" type="button">My Sold Notes</button></a>
+                            <a href="my_rejected_notes.html"><button class="dropdown-item" type="button">My Rejected Notes</button></a>
+                            <a href="change_pwd.html"><button class="dropdown-item" type="button">Change Password</button></a>
+                            <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                            </div>
+                            </li>
+                            <li>
+                                <button class="btn-logout">Logout</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+
+        <div class="downloads-heading">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Buyer Requests </h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="search">
+                        <img src="~/Content/Images/Search/search-icon.png">
+                        <input type="text" placeholder="Search">
+                        <button>SEARCH</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-containt">
+            <table class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th scope="col">SR NO.</th>
+                        <th scope="col">NOTE TITLE</th>
+                        <th scope="col">CATEGORY</th>
+                        <th scope="col">BUYER</th>
+                        <th scope="col">PHONE NO.</th>
+                        <th scope="col">SELL TYPE</th>
+                        <th scope="col">PRICE</th>
+                        <th scope="col">DOWNLOAD DATE/TIME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="~/Content/Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="col-color">Data Science</td>
+                        <td>Science</td>
+                        <td>testting123#gmail.com</td>
+                        <td>9876543210</td>
+                        <td>Paid</td>
+                        <td>$250</td>
+                        <td>27 Nov 2020,11:24:34</td>
+                        <td><img src="../Images/pre-login/eye.png">
+                        </td>
+                        <td><a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <button class="dropdown-item" type="button">Allow Download</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--pagination-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link page-link-arrow " href="#" tabindex="-1" aria-disabled="true">
+                <i class="fa fa-chevron-left"></i></a>
+            </li>
+            <li class="page-item "><a class="page-link active" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+                <a class="page-link page-link-arrow" href="#"><i class=" fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--footer area-->
+    <hr>
+    <footer>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Copyright &copy;TatvaSoft All Rights Reserved.
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <ul class="social-list">
+                            <li><a href="#">
+                                    <img src="../Images/User-Profile/facebook.png" style="margin-right:12px">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../Images/User-Profile/twitter.png" style="margin-right:6px">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="../Images/User-Profile/linkedin.png" style="margin-right:8px; margin-bottom:4px">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!--script js-->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

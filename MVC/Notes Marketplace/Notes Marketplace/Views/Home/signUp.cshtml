@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>Sign Up</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="~/Content/CSS/bootstrap/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="~/Content/CSS/style.css">
+</head>
+
+<body>  
+    <!-- forgot-password section-->
+    <section id="login">
+        <!--backgroud image-->
+        <div>
+            <img id="login-bg-img" src="~/Content/Images/pre-login/banner-with-overlay.jpg" alt="background img" class="img-responsive">
+            <!--top-logo-->
+            <div id="login-container" style="margin-top: -70px;">
+                <div id="sign-up-logo"><img src="~/Content/Images/pre-login/top-logo.png" alt="top-logo" class="img-responsive">
+                </div>
+                <div id="login-form">
+                    <form>
+                        <h3>Create an Account</h3>
+                        <p>Enter your Details to signup</p>
+                        <small id="signup-successfully" class="form-text text-muted text-center"><p>Your account has been successfully created.</p></small>
+                        <div class="form-group">
+                            <label class="heading" for="firstName">First Name*</label><br>
+                            <input type="firstName" class="form-control" id="email" placeholder="Enter your First name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="heading" for="lastName">Last Name*</label><br>
+                            <input type="lastName" class="form-control" id="email" placeholder="Enter your Last name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="heading" for="email">Email*</label><br>
+                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <label class="heading" for="password">Password:</label>
+                            </div>
+                            <div class="inputContainer">
+                                <input type="password" class="form-control" id="login-password" placeholder="Enter Your Password">
+                                <span toggle="#login-password" class="fa fa-fw fa-eye field-icon toggle-password">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <label class="heading" for="password">Confirm Password:</label>
+                            </div>
+                            <div class="inputContainer">
+                                <input type="password" class="form-control" id="login-password" placeholder="Enter Your Password">
+                                <span toggle="#login-password" class="fa fa-fw fa-eye field-icon toggle-password">
+                                </span>
+                            </div>
+                        </div>
+                        <button class="login-btn">SIGN UP</button>
+                        <p>Already have an account?@Html.ActionLink(" Login","Index","Home")</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <!--Script-->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
