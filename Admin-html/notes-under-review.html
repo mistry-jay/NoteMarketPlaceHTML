@@ -73,11 +73,23 @@
     <div class="container">
 
         <div class="downloads-heading">
-           <h2>Rejected Notes</h2>
+           <h2>Notes Under Review</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <button class="add-admin-btn">Add Administrator</button>
-                </div>
+                <div class="small_text col-md-12">seller</div>
+               <div class="seller_drop col-md-6 col-sm-6 col-12" style="padding-top: 20px; padding-left: 0;">
+                   <div class="btn-group" style="width: auto;">
+                       <button type="button" class="btn btn-light dropdown-toggle" id="dropdown_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="height: 40px; font-size: 16px; line-height: 20px; text-align: left; text-transform: capitalize">
+                           Khyati
+                       </button>
+                       <div class="dropdown-menu dropdown-menu-right">
+                           <button class="dropdown-item" type="button">Rahul</button>
+                           <button class="dropdown-item" type="button">Suman</button>
+                           <button class="dropdown-item" type="button">Raj</button>
+                           <button class="dropdown-item" type="button">Niya</button>
+                       </div>
+                   </div>
+               </div>
+
                 <div class="col-md-6">
                     <div class="search">
                         <img src="../Images/Search/search-icon.png">
@@ -91,15 +103,17 @@
         <table class="table table-hover center">
   <thead>
     <tr>
-      <th scope="col">SR NO.</th>
-      <th scope="col">TITLE</th>
-      <th scope="col">CATEGORY</th>
-      <th scope="col">ATTACHMENT SIZE</th>
-      <th scope="col">SELL TYPE</th>
-      <th scope="col">PRICE</th>
-      <th scope="col">PUBLISHER</th>
-      <th scope="col">PUBLISHED DATE</th>
-      <th scope="col">NUMBER OF DOWNLOADS</th>
+      <th scope="col" style="width: 5%;">sr no.</th>
+                           <th scope="col" style="width: 40%;">note title</th>
+                           <th scope="col" style="width: 5%;">category</th>
+                           <th scope="col" style="width: 15%;">seller</th>
+                           <th scope="col" style="width: 5%;"></th>
+                           <th scope="col" style="width: 30%;">date added</th>
+                           <th scope="col" style="width: 15%;">status</th>
+                           <th scope="col" style="width: 5%;"></th>
+                           <th scope="col" style="width: 5%;">action</th>
+                           <th scope="col" style="width: 5%;"></th>
+                           <th scope="col" style="width: 5%;"></th>
     </tr>
   </thead>
   <tbody>
@@ -107,70 +121,140 @@
        <td>1</td>
       <td class="col-color">Data Science</td>
       <td>Science</td>
-       <td>10 KB</td>
-       <td>Free</td>
-       <td>0$</td>
-       <td>Pritesh Panchal</td>
-        <td>09-10-2020,10:10</td>
-      <td class="col-color">10</td>
-      <td><img src="../Images/Search/dots.png">
-      </td>
+       <td>Khyati Patel</td>
+       <td><img src="../Images/pre-login/eye.png"></td>
+                           <td>09-10-2020, 10:10</td>
+                           <td>InReview</td>
+                           <td><button type="button" class="btn btn-primary green_btn">Approve</button></td>
+                           <td><button type="button" class="btn btn-primary red_btn" data-toggle="modal" data-target="#rejectmodal">Reject</button></td>
+                           <td><button type="button" class="btn btn-primary gray_btn">InReview</button></td>
+                           <td>
+                               <a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                               <div class="dropdown-menu dropdown-menu-right">
+                                   <button class="dropdown-item" type="button">Download Notes</button>
+                                   <button class="dropdown-item" type="button">View More Details</button>
+                                   <button class="dropdown-item" type="button">Unpublish</button>
+                               </div>
+
+                           </td>
     </tr>
     <tr>
-       <td>1</td>
-      <td class="col-color">Data Science</td>
-      <td>Science</td>
-       <td>10 KB</td>
-       <td>Free</td>
-       <td>0$</td>
-       <td>Pritesh Panchal</td>
-        <td>09-10-2020,10:10</td>
-      <td class="col-color">10</td>
-      <td><img src="../Images/Search/dots.png">
-      </td>
-    </tr>
-    <tr>
-       <td>1</td>
-      <td class="col-color">Data Science</td>
-      <td>Science</td>
-       <td>10 KB</td>
-       <td>Free</td>
-       <td>0$</td>
-       <td>Pritesh Panchal</td>
-        <td>09-10-2020,10:10</td>
-      <td class="col-color">10</td>
-      <td><img src="../Images/Search/dots.png">
-      </td>
-    </tr>
-    <tr>
-       <td>1</td>
-      <td class="col-color">Data Science</td>
-      <td>Science</td>
-       <td>10 KB</td>
-       <td>Free</td>
-       <td>0$</td>
-       <td>Pritesh Panchal</td>
-        <td>09-10-2020,10:10</td>
-      <td class="col-color">10</td>
-      <td><img src="../Images/Search/dots.png">
-      </td>
-    </tr>
-    <tr>
-       <td>1</td>
-      <td class="col-color">Data Science</td>
-      <td>Science</td>
-       <td>10 KB</td>
-       <td>Free</td>
-       <td>0$</td>
-       <td>Pritesh Panchal</td>
-        <td>09-10-2020,10:10</td>
-      <td class="col-color">10</td>
-      <td><img src="../Images/Search/dots.png">
-      </td>
-    </tr>
+                           <td>2</td>
+                           <td class="purple_text">Computer Basic</td>
+                           <td>Computer</td>
+                           <td>Khyati Patel</td>
+                           <td><img src="../Images/pre-login/eye.png"></td>
+                           <td>10-10-2020, 11:25</td>
+                           <td>Submitted For Review</td>
+                           <td><button type="button" class="btn btn-primary green_btn">Approve</button></td>
+                           <td><button type="button" class="btn btn-primary red_btn" data-toggle="modal" data-target="#rejectmodal">Reject</button></td>
+                           <td><button type="button" class="btn btn-primary gray_btn">InReview</button></td>
+                           <td>
+                               <a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                               <div class="dropdown-menu dropdown-menu-right">
+                                   <button class="dropdown-item" type="button">Download Notes</button>
+                                   <button class="dropdown-item" type="button">View More Details</button>
+                                   <button class="dropdown-item" type="button">Unpublish</button>
+                               </div>
+
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>3</td>
+                           <td class="purple_text">Human Body</td>
+                           <td>Science</td>
+                           <td>Khyati Patel</td>
+                           <td><img src="../Images/pre-login/eye.png"></td>                           <td>11-10-2020, 01:00</td>
+                           <td>InReview</td>
+                           <td><button type="button" class="btn btn-primary green_btn">Approve</button></td>
+                           <td><button type="button" class="btn btn-primary red_btn" data-toggle="modal" data-target="#rejectmodal">Reject</button></td>
+                           <td><button type="button" class="btn btn-primary gray_btn">InReview</button></td>
+                           <td>
+                               <a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                               <div class="dropdown-menu dropdown-menu-right">
+                                   <button class="dropdown-item" type="button">Download Notes</button>
+                                   <button class="dropdown-item" type="button">View More Details</button>
+                                   <button class="dropdown-item" type="button">Unpublish</button>
+                               </div>
+
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>4</td>
+                           <td class="purple_text">World War 2</td>
+                           <td>History</td>
+                           <td>Khyati Patel</td>
+                           <td><img src="../Images/pre-login/eye.png"></td>
+                           <td>12-10-2020, 10:10</td>
+                           <td>InReview</td>
+                           <td><button type="button" class="btn btn-primary green_btn">Approve</button></td>
+                           <td><button type="button" class="btn btn-primary red_btn" data-toggle="modal" data-target="#rejectmodal">Reject</button></td>
+                           <td><button type="button" class="btn btn-primary gray_btn">InReview</button></td>
+                           <td>
+                               <a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                               <div class="dropdown-menu dropdown-menu-right">
+                                   <button class="dropdown-item" type="button">Download Notes</button>
+                                   <button class="dropdown-item" type="button">View More Details</button>
+                                   <button class="dropdown-item" type="button">Unpublish</button>
+                               </div>
+
+                           </td>
+                       </tr>
+                       <tr>
+                           <td>5</td>
+                           <td class="purple_text">Accounting</td>
+                           <td>Account</td>
+                           <td>Khyati Patel</td>
+                           <td><img src="../Images/pre-login/eye.png"></td>                           <td>13-10-2020, 11:25</td>
+                           <td>InReview</td>
+                           <td><button type="button" class="btn btn-primary green_btn">Approve</button></td>
+                           <td><button type="button" class="btn btn-primary red_btn" data-toggle="modal" data-target="#rejectmodal">Reject</button></td>
+                           <td><button type="button" class="btn btn-primary gray_btn">InReview</button></td>
+                           <td>
+                               <a href="#" class="icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                               <div class="dropdown-menu dropdown-menu-right">
+                                   <button class="dropdown-item" type="button">Download Notes</button>
+                                   <button class="dropdown-item" type="button">View More Details</button>
+                                   <button class="dropdown-item" type="button">Unpublish</button>
+                               </div>
+
+                           </td>
+                       </tr>
     
   </tbody>
 </table>  </div>
+             <!-- Modal -->
+    <div class="modal fade reject_modal" id="rejectmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal_head col-md-12">
+                    <div class="modal_heading col-md-10">Human Body - Science</div>
+                    <div class="modal-close col-md-2">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                        </div>
+
+                        <div class="comment-box">
+                            <label for="exampleInputfname">Remarks</label>
+                            <textarea class="form-control" id="exampleInputfname" placeholder="Write remarks" rows="5"></textarea>
+                        </div>
+                        <div class="modal_button text-right">
+                            <button type="button" class="btn btn-primary red_btn">Reject</button>
+                            <button type="button" class="btn btn-primary gray_btn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
         <!--pagination-->
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
@@ -199,7 +283,7 @@
                             <p>VERION 1.1.24</p>
                         </div>
                         <div class="col-md-6" style="float: right;">
-                            <p>
+                            <p style="float: right;">
                                 Copyright &copy;TatvaSoft All Rights Reserved.
                             </p>
                         </div>
