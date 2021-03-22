@@ -1157,7 +1157,16 @@ set-box-shadow-cicis-menu-to-go {
     line-height: 38px;
     color: #6255a5;
 }
+.table .dropdown-menu .dropdown-menu-right{
+        display: block;
+}
 
+.table .dropdown-menu{
+        margin:0px !important;
+        position:relative !important;
+        top:30px !important;
+        left:120px !important
+}
 /*-----------------
     Pagination bottom navigation
 -------------*/
@@ -1287,6 +1296,10 @@ set-box-shadow-cicis-menu-to-go {
     text-align: center;
     display:block  !important;
 
+}
+.dropdown-menu a{
+    text-align: center;
+    display:block  !important;
 }
 .dropdown-menu .dropdown-item:hover {
     background-color: #6255a5;

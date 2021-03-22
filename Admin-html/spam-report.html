@@ -35,20 +35,33 @@
                     <nav class="main-nav">
                         <ul class="menu-navigation">
                             <li class="header-item">
-                                <a class="header-tab" href="search-note.html">Dashboard</a>
+                                <a class="header-tab" href="../Admin-html/admin_dashboard.html">Dashboard</a>
                             </li>
                             <li class="header-item">
-                                <a class="header-tab" href="my-sold-notes.html">Notes</a>
+                                <a class="header-tab" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="notes">Notes</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="../Admin-html/notes-under-review.html" class="dropdown-item" type="button">Notes Under Review</a>
+                                    <a href="../Admin-html/published-notes.html" class="dropdown-item" type="button">Published Notes</a>
+                                    <a href="../Admin-html/admin-download.html" class="dropdown-item" type="button">Downloaded Notes</a>
+                                    <a href="../Admin-html/admin-rejected.html" class="dropdown-item" type="button">Rejected Notes</a>
+                                </div>
                             </li>
                             <li class="header-item">
-                                <a class="header-tab" href="buyer-req.html">Members</a>
+                                <a class="header-tab" href="../Admin-html/members.html">Members</a>
                             </li>
                             <li class="header-item">
-                                <a class="header-tab" href="faq.html">Reports</a>
+                                <a class="header-tab" href="../Admin-html/spam-report.html">Reports</a>
                             </li>
-
+                            
                             <li class="header-item">
-                                <a class="header-tab" href="contact-us.html">Settings</a>
+                                <a class="header-tab" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="notes">Setting</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="../Admin-html/manage-system.html" class="dropdown-item" type="button">Manage System Configeration</a>
+                                    <a href="../Admin-html/manage-admin.html" class="dropdown-item" type="button">Manage Admin</a>
+                                    <a href="../Admin-html/manage-category.html" class="dropdown-item" type="button">Manage Category</a>
+                                    <a href="../Admin-html/manage-type.html" class="dropdown-item" type="button">Manage Type</a>
+                                    <a href="../Admin-html/manage-country.html" class="dropdown-item" type="button">Manage Country</a>
+                                </div>
                             </li>
 
                             <li class="header-item">
@@ -56,9 +69,9 @@
                                     <img src="../Images/User-Profile/user-img.png" class="user-img">
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a href="user-profile.html"><button class="dropdown-item" type="button">Update Profile</button></a>
-                                    <a href="my-downloads.html"><button class="dropdown-item" type="button">Change Password</button></a>
-                                    <a href="home-page.html"><button class="dropdown-item" type="button"><span>LOGOUT</span></button></a>
+                                    <a href="user-profile.html" class="dropdown-item" type="button">Update Profile</a>
+                                    <a href="my-downloads.html" class="dropdown-item" type="button">Change Password</a>
+                                    <a href="home-page.html" class="dropdown-item" type="button"><span>LOGOUT</span></a>
                                 </div>
                             </li>
                             <li>
