@@ -1,0 +1,104 @@
+﻿@model Note_Marketplace.DBModels.User
+
+@{
+    ViewBag.Title = "SignUp";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>Sign Up</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="~/Content/CSS/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- style css-->
+    <link rel="stylesheet" href="~/Content/CSS/style.css">
+</head>
+<body>
+    <!-- forgot-password section-->
+    <section id="login">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <!--backgroud image-->
+            <div>
+                <img id="login-bg-img" src="~/Content/Images/pre-login/banner-with-overlay.jpg" alt="background img" class="img-responsive">
+                <!--top-logo-->
+                <div id="login-container" style="margin-top: -70px;">
+                    <div id="sign-up-logo">
+                        <img src="~/Content/Images/pre-login/top-logo.png" alt="top-logo" class="img-responsive">
+                    </div>
+                    <div id="login-form">
+                        <form>
+                            <h3>Create an Account</h3>
+                            <p>Enter your Details to signup</p>
+                            <small id="signup-successfully" class="form-text text-muted text-center">@ViewBag.Success</small>
+                            <div class="form-group">
+                                <label class="heading" for="firstName">First Name*</label><br>
+                                @Html.TextBoxFor(model => model.FirstName, htmlAttributes: new { @class = "form-control", @placeholder = "Enter your first name", @required = "required", id = "email" })
+                                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label class="heading" for="lastName">Last Name*</label><br>
+                                @Html.TextBoxFor(model => model.LastName, htmlAttributes: new { @class = "form-control", @placeholder = "Enter your last name", @required = "required", id = "email" })
+                                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <label class="heading" for="email">Email*</label><br>
+                                @Html.TextBoxFor(model => model.EmailID, htmlAttributes: new { @class = "form-control", @placeholder = "Enter your email address", @required = "required", id = "email" })
+                                @Html.ValidationMessageFor(model => model.EmailID, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <label class="heading" for="password">Password:</label>
+                                </div>
+                                <div class="inputContainer">
+                                    @Html.PasswordFor(model => model.Password, htmlAttributes: new { @class = "form-control", @placeholder = "Enter your password", @required = "required", id = "login-password" })
+                                    <span toggle="#login-password" class="fa fa-fw fa-eye field-icon toggle-password">
+                                    </span>
+                                </div>
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                            @*<div class="form-group">
+                                    <div>
+                                        <label class="heading" for="password">Confirm Password:</label>
+                                    </div>
+                                    <div class="inputContainer">
+                                        @Html.PasswordFor( htmlAttributes: new { @class = "form-control", @placeholder = "Re-enter your Password", @required = "required", id = "login-password" })
+                                        <span toggle="#login-password" class="fa fa-fw fa-eye field-icon toggle-password">
+                                        </span>
+                                    </div>
+                                    @Html.ValidationMessageFor(model => model.ConfirmPassword, "", new { @class = "text-danger" })
+                                </div>*@
+                            <button class="login-btn">SIGN UP</button>
+                            <p>Already have an account?<a>@Html.ActionLink(" Login", "Index")</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </section>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Script-->
+    <script src="~/Scripts/js/script.js"></script>
+</body>
+
+</html>

@@ -4,9 +4,12 @@ function sticky_header() {
     var header_height = jQuery('.site-header').innerHeight() / 2;
     var scrollTop = jQuery(window).scrollTop();;
     if (scrollTop > header_height) {
-        jQuery('body').addClass('sticky-header');
+        jQuery('body').addClass('sticky-header  ');
+        $(".home_navbar .logo-wrapper img").attr("src","../Images/home/logo.png" );
+        
     } else {
         jQuery('body').removeClass('sticky-header');
+        $(".home_navbar .logo-wrapper img").attr("src", "../Images/home/top-logo.png");
     }
 }
 

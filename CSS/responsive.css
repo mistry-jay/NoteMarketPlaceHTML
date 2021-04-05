@@ -1,0 +1,317 @@
+/* Medium Devices (Medium Desktop & Tablets) */
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    /* Home */
+    .home-text {
+        top: 8%;
+        height: 520px;
+    }
+
+    .vertical-center h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+    .vertical-center p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+    
+    /* Small Devices */
+@media(min-width: 768px) and (max-width: 991px) {
+    
+
+    /* Home */
+    .home-text {
+        top: 8%;
+        height: 520px;
+    }
+
+    .vertical-center h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .vertical-center p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .customer-review {
+        padding: 20px;
+    }
+
+    .customer-review h4 {
+        font-size: 22px;
+    }
+
+    .customer-review h5 {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 50%;
+        overflow: hidden;
+        position: absolute;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .customer-review p {
+        font-size: 16px;
+        margin: 0;
+    }
+    }
+    /* Extra Small Devices */
+@media(max-width: 767px) {
+    
+    /* Home */
+    
+    .home-text {
+        top: 8%;
+        height: 530px;
+    }
+
+    .vertical-center h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .vertical-center p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .work .work_btn #btn1 {
+        margin-bottom: 30px;
+    }
+    #about-marketplace-heading {
+        margin-bottom: 30px;
+    }
+
+    .customer-review{
+        padding: 20px;
+    }
+    .customer-name h4 {
+        font-size: 22px;
+    }
+    .customer-name h5{
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 50%;
+        overflow: hidden;
+        position: absolute;
+        display: inline-block;
+        margin-top: 0;
+    }
+    .customer-review p{
+        padding: 20px;
+    }
+    
+    /* Extra Small Devices */
+@media(max-width: 480px) {
+ /* Login form */
+    #login-form {
+        padding: 50px 30px;
+    }
+    /* Home */
+    @media(min-width:319px) and (max-width:400px){
+        
+    
+    .home,
+    .home_img{
+    	height: 520px;
+    }
+    
+     .home-text {
+        top: 2%;
+        height: 530px;
+        width: 90%; 
+    }
+
+    .vertical-center h1 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .vertical-center p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .work .work_btn #btn1 {
+        margin-bottom: 30px;
+    }
+
+    .about_heading {
+        margin-bottom: 30px;
+    }
+
+
+    .customer-review h4 {
+        font-size: 22px;
+    }
+
+    .customer-review h5 {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 50%;
+        overflow: hidden;
+        position: absolute;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .customer-review p {
+        font-size: 16px;
+        margin: 0;
+    }
+       /* Pagination */
+
+    .pagination {
+        padding-left: 0;
+    }
+
+    .pagination li a {
+        margin-right: 0;
+    }
+
+    .pagination .page-item .active {
+        margin-right: 0;
+    }
+
+    .pagination li .page-link-arrow {
+        margin-right: 0;
+    }  
+    }
+    
+    @media(min-width:319px) and (max-width:400px) 
+    {
+         /* Home */
+
+    .home,
+    .home_img{
+    	height: 520px;
+    }
+
+    .about_heading {
+        margin-bottom: 30px;
+    }
+
+    .work .work_btn #btn1 {
+        margin-bottom: 30px;
+    }
+
+    .customer-review {
+        padding: 20px;
+    }
+
+    .customer-review h4 {
+        font-size: 22px;
+    }
+
+    .customer-review h5 {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 50%;
+        overflow: hidden;
+        position: absolute;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .customer-review p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .footer p {
+        text-align: center !important;
+    }
+    .footer_content,
+    .social-list {
+        width: 100% !important;
+    }
+    }
+    /* Extra Small Devices */
+@media(max-width: 320px) {
+    /* Login form */
+    #login-form {
+        padding: 50px 30px;
+    }
+
+    /* Home */
+    .home,
+    .home_img{
+    	height: 520px;
+    }
+
+    .home-text {
+        top: 2%;
+        height: 530px;
+    }
+
+    .vertical-center h1 {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .vertical-center p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .work .work_btn #btn1 {
+        margin-bottom: 30px;
+    }
+
+    .customer-review {
+        padding: 20px;
+    }
+
+    .customer-review h4{
+        font-size: 22px;
+    }
+
+    .customer-review h5 {
+        font-size: 14px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 50%;
+        overflow: hidden;
+        position: absolute;
+        display: inline-block;
+        margin-top: 0;
+    }
+
+    .customer-review p {
+        font-size: 16px;
+        margin: 0;
+    }
+    .footer_content,
+    .social-list {
+        width: 100% !important;
+    }
+    /* Pagination */
+
+    .pagination {
+        padding-left: 0;
+    }
+
+    .pagination li a {
+        margin-right: 0;
+    }
+
+    .pagination .page-item .active {
+        margin-right: 0;
+    }
+
+    .pagination li .page-link-arrow {
+        margin-right: 0;
+    }
+    /* FAQ */
+    .faq-ans,
+    .q .faq-qstn {
+        font-size: 14px;
+    }
+    }
+    

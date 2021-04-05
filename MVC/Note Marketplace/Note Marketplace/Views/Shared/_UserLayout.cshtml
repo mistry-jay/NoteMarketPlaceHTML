@@ -1,0 +1,113 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>@ViewBag.Title</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/Content/Images/favicon.ico">
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="~/Content/CSS/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="~/Content/CSS/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- style css-->
+    <link rel="stylesheet" href="~/Content/CSS/style.css">
+    <!-- responsive css-->
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="header-wrapper Container">
+                <div class="logo-wrapper">
+                    <a href="#" title="Site Logo">
+                        <img src="~/Content/Images/User-Profile/logo.png" alt="logo" class="responsive img">
+                    </a>
+                </div>
+                <div class="navigation-wrapper">
+                    <nav class="main-nav">
+                        <ul class="menu-navigation">
+                            <li class="header-item">
+                                <a class="header-tab" href="search-note.html">Search Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="add-notes.html">sell your Notes</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="@Url.Action("FAQ","User")" >FAQ</a>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" href="@Url.Action("Contact","User")">Contact Us</a>
+                            </li>
+                            <li>
+                                <button class="btn-logout">Login</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!--User Profile Heading-->
+    <div>@RenderBody()</div>
+    <!--footer area-->
+    <hr>
+    <footer>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Copyright &copy;TatvaSoft All Rights Reserved.
+                        </p>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        <ul class="social-list">
+                            <li>
+                                <a href="#">
+                                    <img src="~/Content/Images/User-Profile/facebook.png" style="margin-right:12px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/Content/Images/User-Profile/twitter.png" style="margin-right:6px">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="~/Content/Images/User-Profile/linkedin.png" style="margin-right:8px; margin-bottom:4px">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--bootstrap-->
+    <script src="~/Scripts/js/bootstrap/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--script js-->
+    <script src="~/Scripts/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NoteMarketplaceModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CountryCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Download">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NoteID" Type="Int32" Nullable="false" />
+    <Property Name="Seller" Type="Int32" Nullable="false" />
+    <Property Name="Downloader" Type="Int32" Nullable="false" />
+    <Property Name="IsSellerHasAllowedDownload" Type="Boolean" Nullable="false" />
+    <Property Name="AttachmentPath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="IsAttachmentDownloaded" Type="Boolean" Nullable="false" />
+    <Property Name="AttachmentDownloadedDate" Type="DateTime" Precision="3" />
+    <Property Name="IsPaid" Type="Boolean" Nullable="false" />
+    <Property Name="PurchasedPrice" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="NoteTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NoteCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="NoteCategory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NoteType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ReferenceData">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Datavalue" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="RefCategory" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SellerNote">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SellerID" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="ActionedBy" Type="Int32" />
+    <Property Name="AdminRemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PublshedDate" Type="DateTime" Precision="3" />
+    <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Category" Type="Int32" Nullable="false" />
+    <Property Name="DisplayPicture" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="NoteType" Type="Int32" />
+    <Property Name="NumberOfPages" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UniversityName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="Int32" />
+    <Property Name="Course" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CourseCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Professor" Type="Binary" MaxLength="100" FixedLength="false" />
+    <Property Name="IsPaid" Type="Boolean" Nullable="false" />
+    <Property Name="SellingPrice" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="NotesPreview" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_SellerNotes_Users" FromRole="SellerNotes" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="sellerNotesAttachment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NoteID" Type="Int32" Nullable="false" />
+    <Property Name="FileName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SystemConfiguration">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Key" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Value" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserProfile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="DOB" Type="DateTime" Precision="3" />
+    <Property Name="Gender" Type="Int32" />
+    <Property Name="SecondaryEmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNumberCountryCode" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ProfilePicture" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="AddressLine1" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AddressLine2" Type="Binary" MaxLength="100" FixedLength="false" Nullable="false" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="State" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ZipCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="University" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="College" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <NavigationProperty Name="User" Relationship="Self.FK_UserProfile_Users" FromRole="UserProfile" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Users_UserRoles" FromRole="UserRoles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleID" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="24" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsEmailVerified" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="SellerNotes" Relationship="Self.FK_SellerNotes_Users" FromRole="Users" ToRole="SellerNotes" />
+    <NavigationProperty Name="UserProfiles" Relationship="Self.FK_UserProfile_Users" FromRole="Users" ToRole="UserProfile" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_Users_UserRoles" FromRole="Users" ToRole="UserRoles" />
+  </EntityType>
+  <EntityType Name="SellerNotesReportedIssue">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="NOTEID" />
+      <PropertyRef Name="ReportedBYID" />
+      <PropertyRef Name="AgainstDownloadID" />
+      <PropertyRef Name="Remarks" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NOTEID" Type="Int32" Nullable="false" />
+    <Property Name="ReportedBYID" Type="Int32" Nullable="false" />
+    <Property Name="AgainstDownloadID" Type="Int32" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int32" />
+  </EntityType>
+  <EntityType Name="SellerNotesReview">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="NoteID" />
+      <PropertyRef Name="ReviewedByID" />
+      <PropertyRef Name="AgainstDownloadsID" />
+      <PropertyRef Name="Rating" />
+      <PropertyRef Name="Comments" />
+      <PropertyRef Name="IsActive" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NoteID" Type="Int32" Nullable="false" />
+    <Property Name="ReviewedByID" Type="Int32" Nullable="false" />
+    <Property Name="AgainstDownloadsID" Type="Int32" Nullable="false" />
+    <Property Name="Rating" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="0" />
+    <Property Name="ModifiedBy" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_SellerNotes_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="SellerNotes" Type="Self.SellerNote" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="SellerNotes">
+        <PropertyRef Name="SellerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserProfile_Users">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="UserProfile" Type="Self.UserProfile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UserProfile">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_UserRoles">
+    <End Role="UserRoles" Type="Self.UserRole" Multiplicity="1" />
+    <End Role="Users" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRoles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NoteMarketplaceEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Downloads" EntityType="Self.Download" />
+    <EntitySet Name="NoteCategories" EntityType="Self.NoteCategory" />
+    <EntitySet Name="NoteTypes" EntityType="Self.NoteType" />
+    <EntitySet Name="ReferenceDatas" EntityType="Self.ReferenceData" />
+    <EntitySet Name="SellerNotes" EntityType="Self.SellerNote" />
+    <EntitySet Name="sellerNotesAttachments" EntityType="Self.sellerNotesAttachment" />
+    <EntitySet Name="SystemConfigurations" EntityType="Self.SystemConfiguration" />
+    <EntitySet Name="UserProfiles" EntityType="Self.UserProfile" />
+    <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="SellerNotesReportedIssues" EntityType="Self.SellerNotesReportedIssue" />
+    <EntitySet Name="SellerNotesReviews" EntityType="Self.SellerNotesReview" />
+    <AssociationSet Name="FK_SellerNotes_Users" Association="Self.FK_SellerNotes_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="SellerNotes" EntitySet="SellerNotes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserProfile_Users" Association="Self.FK_UserProfile_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserProfile" EntitySet="UserProfiles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_UserRoles" Association="Self.FK_Users_UserRoles">
+      <End Role="UserRoles" EntitySet="UserRoles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

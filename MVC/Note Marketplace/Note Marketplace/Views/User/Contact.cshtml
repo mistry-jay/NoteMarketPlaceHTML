@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Contact Us";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<div>
+    <div class="user-profile-img">
+        <div><img src="../Images/User-Profile/banner-with-overlay.jpg"></div>
+        <div id="user-profile-heading">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+</div>
+<!--Contact us-->
+<div class="container">
+    <div id="search-heading">
+        <h2>Get in Touch </h2>
+
+        <p>Let us know how to get back to you</p>
+    </div>
+    <div class="row">
+        <div class="form">
+            <div class="col-md-6">
+                <div class="col-md-6 profile-details-form">
+                    <label class="heading" for="firstName">Full Name*</label><br>
+                    <input type="firstName" class="form-control details-input" placeholder="Enter your Full name" required>
+                </div>
+
+
+                <div class="col-md-6 profile-details-form">
+                    <label class="heading" for="firstName">Email Address*</label><br>
+                    <input type="firstName" class="form-control details-input" placeholder="Enter your email address" required>
+                </div>
+                <div class="col-md-6 profile-details-form">
+                    <label class="heading" for="firstName">Subject*</label><br>
+                    <input type="firstName" class="form-control details-input" placeholder="Enter your Subject" required>
+                </div>
+            </div>
+
+            <div class="col-md-6 profile-details-form">
+                <label class="heading" for="firstName">Comments/Questions*</label><br>
+                <textarea class="form-control comment-section" placeholder="Comments..."></textarea>
+            </div>
+            <div class="col-md-12">
+                <button class="btn-submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</div>
+

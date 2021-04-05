@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Important meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--Title for url-->
+    <title>Member Details</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Images/Search/favicon.ico">
+    <!-- open sans font-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="../CSS/bootstrap/bootstrap.min.css">
+    <!-- style css-->
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <!--Header-->
+    <div class="wrapper">
+        <header class="site-header">    
+            <div class="header-wrapper">
+                <div class="logo-wrapper">
+                    <a href="#" title="Site Logo">
+                        <img src="../Images/User-Profile/logo.png" alt="logo" class="responsive img">
+                    </a>
+                </div>
+                <div class="navigation-wrapper">
+                    <nav class="main-nav">
+                        <ul class="menu-navigation">
+                            <li class="header-item">
+                                <a class="header-tab" href="../Admin-html/admin_dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="notes">Notes</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="../Admin-html/notes-under-review.html" class="dropdown-item" type="button">Notes Under Review</a>
+                                    <a href="../Admin-html/published-notes.html" class="dropdown-item" type="button">Published Notes</a>
+                                    <a href="../Admin-html/admin-download.html" class="dropdown-item" type="button">Downloaded Notes</a>
+                                    <a href="../Admin-html/admin-rejected.html" class="dropdown-item" type="button">Rejected Notes</a>
+                                </div>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="../Admin-html/members.html">Members</a>
+                            </li>
+                            <li class="header-item">
+                                <a class="header-tab" href="../Admin-html/spam-report.html">Reports</a>
+                            </li>
+                            
+                            <li class="header-item">
+                                <a class="header-tab" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="notes">Setting</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="../Admin-html/manage-system.html" class="dropdown-item" type="button">Manage System Configeration</a>
+                                    <a href="../Admin-html/manage-admin.html" class="dropdown-item" type="button">Manage Admin</a>
+                                    <a href="../Admin-html/manage-category.html" class="dropdown-item" type="button">Manage Category</a>
+                                    <a href="../Admin-html/manage-type.html" class="dropdown-item" type="button">Manage Type</a>
+                                    <a href="../Admin-html/manage-country.html" class="dropdown-item" type="button">Manage Country</a>
+                                </div>
+                            </li>
+
+                            <li class="header-item">
+                                <a class="header-tab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../Images/User-Profile/user-img.png" class="user-img">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="user-profile.html" class="dropdown-item" type="button">Update Profile</a>
+                                    <a href="my-downloads.html" class="dropdown-item" type="button">Change Password</a>
+                                    <a href="home-page.html" class="dropdown-item" type="button"><span>LOGOUT</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn-logout">Logout</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+        <!-- member detais -->
+    <section class="member_details">
+        <div class="container">
+            <div class="row">
+                <div class="downloads-heading">
+                    <h2>Member Details </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="member_content col-md-12">
+                    <div class="member_img col-md-2">
+                        <img src="../images/user/member.png">
+                    </div>
+                    <div class="member_left col-md-4">
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                First Name:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                Richard
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Last Name:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                Brown
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Email:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                richardbrown77@gmail.com
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                DOB:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                13-08-1990
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Phone Number:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                9988731221
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                College/University:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                University of California
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center_line col-md-1" style="margin-left: 80px;"></div>
+                    <div class="member_right col-md-4">
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Address 1:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                144-Diamond Height
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Address2:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                Star Colony
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                City:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                New York
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                State:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                New York State
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Country:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                United State
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="member_info col-md-6 col-sm-6 col-6">
+                                Zip Code:
+                            </div>
+                            <div class="member_info_dark col-md-6 col-sm-6 col-6">
+                                11004-05
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- member detais end -->
+     <div class="container">
+    <div class="downloads-heading">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Notes </h2>
+                </div>
+            </div>
+        </div>
+    <div class="table-containt">
+        <table class="table table-hover center">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 5%;">sr no.</th>
+                           <th scope="col" style="width: 15%;">note title</th>
+                           <th scope="col" style="width: 10%;">category</th>
+                           <th scope="col" style="width: 10%;">buyer</th>
+                           <th scope="col" style="width: 5%;"></th>
+                           <th scope="col" style="width: 15%;">seller</th>
+                           <th scope="col" style="width: 5%;"></th>
+                           <th scope="col" style="width: 5%;">sell type</th>
+                           <th scope="col" style="width: 5%;">price</th>
+                           <th scope="col" style="width: 20%;">downloaded date/time</th>
+                           <th scope="col" style="width: 5%;"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+                           <td>1</td>
+                           <td class="purple_text">Software Engineer</td>
+                           <td>IT</td>
+                           <td>Rahul Shah</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Khayati Patel</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Paid</td>
+                           <td>$145</td>
+                           <td>25-11-2020, 11:08</td>
+                           <td><div class="dropdown">
+                                    <a class="fa fa-ellipsis-v" id="more-dropeddown" src="img/icons/dots.png" alt="more" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false"></a>
+                                    <div class="dropdown-menu more-dropdown-menu" aria-labelledby="more-dropeddown">
+                                         <a class="dropdown-item" type="a">Download Notes</a>
+                                   <a class="dropdown-item" type="a">View More Details</a>
+                                    </div>
+                            </div>
+                        </td>
+                       </tr>
+    <tr>
+                           <td>1</td>
+                           <td class="purple_text">Software Engineer</td>
+                           <td>IT</td>
+                           <td>Rahul Shah</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Khayati Patel</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Paid</td>
+                           <td>$145</td>
+                           <td>25-11-2020, 11:08</td>
+                           <td><div class="dropdown">
+                                    <a class="fa fa-ellipsis-v" id="more-dropeddown" src="img/icons/dots.png" alt="more" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false"></a>
+                                    <div class="dropdown-menu more-dropdown-menu" aria-labelledby="more-dropeddown">
+                                         <a class="dropdown-item" type="a">Download Notes</a>
+                                   <a class="dropdown-item" type="a">View More Details</a>
+                                    </div>
+                            </div>
+                        </td>
+                       </tr>
+<tr>
+                           <td>3</td>
+                           <td class="purple_text">Software Engineer</td>
+                           <td>IT</td>
+                           <td>Rahul Shah</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Khayati Patel</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Paid</td>
+                           <td>$145</td>
+                           <td>25-11-2020, 11:08</td>
+                           <td><div class="dropdown">
+                                    <a class="fa fa-ellipsis-v" id="more-dropeddown" src="img/icons/dots.png" alt="more" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false"></a>
+                                    <div class="dropdown-menu more-dropdown-menu" aria-labelledby="more-dropeddown">
+                                         <a class="dropdown-item" type="a">Download Notes</a>
+                                   <a class="dropdown-item" type="a">View More Details</a>
+                                    </div>
+                            </div>
+                        </td>
+                       </tr>
+    <tr>
+                           <td>4</td>
+                           <td class="purple_text">Software Engineer</td>
+                           <td>IT</td>
+                           <td>Rahul Shah</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Khayati Patel</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Paid</td>
+                           <td>$145</td>
+                           <td>25-11-2020, 11:08</td>
+                           <td><div class="dropdown">
+                                    <a class="fa fa-ellipsis-v" id="more-dropeddown" src="img/icons/dots.png" alt="more" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false"></a>
+                                    <div class="dropdown-menu more-dropdown-menu" aria-labelledby="more-dropeddown">
+                                         <a class="dropdown-item" type="a">Download Notes</a>
+                                   <a class="dropdown-item" type="a">View More Details</a>
+                                    </div>
+                            </div>
+                        </td>
+                       </tr>
+    <tr>
+                           <td>5</td>
+                           <td class="purple_text">Software Engineer</td>
+                           <td>IT</td>
+                           <td>Rahul Shah</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Khayati Patel</td>
+                           <td><img src="../images/pre-login/eye.png"></td>
+                           <td>Paid</td>
+                           <td>$145</td>
+                           <td>25-11-2020, 11:08</td>
+                           <td><div class="dropdown">
+                                    <a class="fa fa-ellipsis-v" id="more-dropeddown" src="img/icons/dots.png" alt="more" data-toggle="dropdown"
+                                       aria-haspopup="true" aria-expanded="false"></a>
+                                    <div class="dropdown-menu more-dropdown-menu" aria-labelledby="more-dropeddown">
+                                         <a class="dropdown-item" type="a">Download Notes</a>
+                                   <a class="dropdown-item" type="a">View More Details</a>
+                                    </div>
+                            </div>
+                        </td>
+                       </tr>
+    
+  </tbody>
+</table>  </div>
+    <!--pagination-->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link page-link-arrow " href="#" tabindex="-1" aria-disabled="true">
+                        <i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="page-item "><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                    <a class="page-link page-link-arrow" href="#"><i class=" fa fa-chevron-right"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+   <!-- Pagination end  -->
+   
+   <!--footer area-->
+        <hr>
+        <footer>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>VERION 1.1.24</p>
+                        </div>
+                        <div class="col-md-6" style="float: right;">
+                            <p style="float: right;">
+                                Copyright &copy;TatvaSoft All Rights Reserved.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--bootstrap-->
+        <script src="../js/bootstrap/bootstrap.min.js"></script>
+        <!--script js-->
+        <script src="../js/script.js"></script>
+</body>
+
+</html>
